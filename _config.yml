@@ -64,7 +64,7 @@ author:
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://www.lkhamsurenl.com"
+      url: "https://lkhamsurenl.github.io"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/lkhamsurenl"
@@ -73,7 +73,7 @@ footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
+      url: "https://github.com/lkhamsurenl"
 
 defaults:
   # _posts

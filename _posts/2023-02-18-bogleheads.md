@@ -1,15 +1,25 @@
 ---
-title: "Bogleheads style - simplified"
+title: "Bogleheads style - summary"
 categories:
   - Blog
 tags:
   - Personal finance
 ---
 
-In this post, I'm gonna summarize my main takeaways from Bogleheads investment principles.
+Early on when I started making money and I actually did try active investing (robinhood, stock picking, building
+models for automated trading, etc) but somewhat quickly realized:
+
+1. It is hard to make sustainable money with active trading (Most of short term gains were due to luck, I definitely was not skilled)
+1. I was not super interested in spending lots of my free time on active investing
+
+The latter point is really what attracted me to Bogleheads investing approach. And the fact that it's simple and
+intuitive means it's accessible to people who lack personal finance knowledge.
+
+You can find everything you need to know about the investment style in [bogleheads.org](https://bogleheads.org).
+In this doc, I am providing my version of simplified summary.
 
 
-## BLUF
+## TLDR
 
 * Pay off any debt as soon as possible (exception to low interest rate ones like mortgage)
 * Maintain 6 months living expense worth of emergency savings
@@ -45,9 +55,23 @@ Rough guideline on asset allocation options:
 **Note**: At the moment, my asset allocation is US - 60%, INT - 20%, BOND - 10%, ABNB - 10%
 
 
+### Track your progress
+
+I keep track of my net worth in a simple spreadsheet that I visit & update once every 3 months. You can find sample starters in
+[bogleheads.org/wiki/Tools_and_calculators](https://www.bogleheads.org/wiki/Tools_and_calculators).
+
+The spreadsheet has several purposes:
+
+* Single place to keep track of asset allocation across multiple accounts
+* Calculate asset re-allocation (e.g. sell some bonds and buy stock if percentages are out of the allocation plan)
+* Visualize your progress over time:
+
+![net_asset](/assets/images/net_asset.png)
+
+
 ### Fidelity 3-fund portfolio
 
-https://www.bogleheads.org/wiki/Fidelity is a great resource for general guideline on Fidelity.
+[bogleheads.org/wiki/Fidelity](https://www.bogleheads.org/wiki/Fidelity) is a great resource for general guideline on Fidelity.
 
 My personal preference:
 
@@ -66,4 +90,4 @@ to have Bonds in one 401k account and allocate stocks in taxable.
 
 ## Resources
 
-* https://bogleheads.org
+* [https://bogleheads.org](https://bogleheads.org)

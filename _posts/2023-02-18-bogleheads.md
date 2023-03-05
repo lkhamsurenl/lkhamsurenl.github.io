@@ -6,13 +6,14 @@ tags:
   - Personal finance
 ---
 
-Early on when I started making money and I actually did try active investing (robinhood, stock picking, building
-models for automated trading, etc) but somewhat quickly realized:
+Early on after started making money, I actually did try out active investing (robinhood, stock picking, building
+models for automated trading, etc) but quickly realized:
 
-1. It is hard to make sustainable money with active trading (Most of short term gains were due to luck, I definitely was not skilled)
-1. I was not super interested in spending lots of my free time on active investing
+* It is hard to make sustainable money with an active trading (Most of short term gains were due to luck, I definitely
+was not skilled)
+* More importantly, I actually was not super interested in spending lots of my free time thinking about active spending.
 
-The latter point is really what attracted me to Bogleheads investing approach. And the fact that it's simple and
+The latter point is really what attracted me to the Bogleheads investing approach. And the fact that it's simple and
 intuitive means it's accessible to people who lack personal finance knowledge.
 
 You can find everything you need to know about the investment style in [bogleheads.org](https://bogleheads.org).
@@ -26,7 +27,7 @@ In this doc, I am providing my version of simplified summary.
 * Ensure you are taking advantage of employer 401k match (free money)
 * Keep investing simple and boring:
   * No need to time the market and chase marginal returns.
-  * You can achieve 90 percentile return (after tax & fee) performance with simple index funds.
+  * You can achieve 90th percentile return (after tax & fee) performance with simple index funds.
 
 ## Investing
 
@@ -44,7 +45,7 @@ In this doc, I am providing my version of simplified summary.
 
 ### Asset allocation
 
-Rough guideline on asset allocation options:
+Simple asset allocation strategy I use:
 
 * 25-40: US - 70%, INT - 15%, Bond - 15%
 * 40-60: US - 50%, INT - 10%, Bond - 20%, Tips - 20%

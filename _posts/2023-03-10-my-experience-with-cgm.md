@@ -33,7 +33,7 @@ My PCP recommended I try out some lifestyle interventions to lower my blood suga
 I have tried what was recommended for few months and did A1C test again, but unfortunately was not getting any meaningful
 improvements:
 
-TODO: insert the image
+![net_asset](/assets/images/a1c.png)
 
 
 At this point, I was getting increasingly frustrated with the result and wanted to really understand why it is still

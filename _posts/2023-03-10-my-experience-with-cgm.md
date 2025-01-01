@@ -6,53 +6,50 @@ tags:
   - Health
 ---
 
-Over the 2 weeks period between 2023-01-06 and 2023-01-18, I have used Freestyle Libre 2 CGM (Continuous Glucose
-Monitoring) device to learn more about how my body responds to food and lifestyle choices. In this post, I am
-going to summarize my main learnings.
+Over the two-week period between January 6, 2023, and January 18, 2023, I used the Freestyle Libre 2 CGM
+(Continuous Glucose Monitoring) device to better understand how my body responds to food and lifestyle choices.
+Here, I’ll summarize my key learnings.
 
 ## Background
 
 **Why do this experiment?**
 
-Before COVID, last time I've tested my A1C level was in December of 2019 and value was 5.4, which is not concerning
-but also not super encouraging given the fact that value over 5.7 is considered pre-diabetes.
+Before COVID, the last time I tested my A1C level was in December 2019. At that time, my A1C was 5.4%—not concerning,
+but also not ideal, as values above 5.7% are considered pre-diabetic.
 
-Access to healthcare was somewhat limited during peak COVID times of 2020-20221, so I've not bothered with going
-for annual check-up. Once things started to settle, I did go for annual check-up and one of the first things I asked
-my PCP was to test my A1C to ensure it has not gotten worse. Unfortunately it has gone actually quite worse: 5.9
+During the peak of COVID-19 (2020–2021), access to healthcare was limited, and I skipped annual check-ups. When things
+normalized, I resumed my routine medical visits. My first priority was testing my A1C to ensure it hadn’t worsened.
+Unfortunately, the result showed a notable increase to **5.9%**.
 
-I knew it was possible that it could have gotten worse, but still came as surprise. My diet has not changed much during
-this time period and I largely do not consume any added sugar, desserts, and soda drinks etc (duh stuff).
+While I expected some changes, this result was surprising since my diet hadn’t significantly changed.
+I don’t consume that much added sugars, desserts, or sodas and generally follow “common sense” dietary guidelines.
 
-My PCP recommended I try out some lifestyle interventions to lower my blood sugar. Specific recommendation I was given:
+My primary care physician (PCP) suggested some lifestyle interventions to lower my blood sugar:
 
-* Avoid high sugar fruits
-* Eat more fiber
-* Exercise more
+- Avoid high-sugar fruits
+- Eat more fiber
+- Exercise more
 
-I have tried what was recommended for few months and did A1C test again, but unfortunately was not getting any meaningful
-improvements:
+I followed these recommendations for several months and repeated the A1C test, but my results didn’t improve significantly.
 
 ![net_asset](/assets/images/a1c.png)
 
 
-At this point, I was getting increasingly frustrated with the result and wanted to really understand why it is still
-high even after those changes I introduced, hence CGM.
+At this point, I felt increasingly frustrated and decided to better understand the factors behind my blood sugar levels. This led me to explore using a CGM device.
 
 **How to get access to CGM?**
 
-You need persription (at least in US) to get one of those FreeStyle Libre devices. In my case, I used company called
-[Ageless](https://agelessrx.com/). It might have costed bit extra compared to getting it through your PCP, but
-I just wanted quick and easy access, so worked out for me.
+In the U.S., a prescription is required for CGM devices like the Freestyle Libre 2. I opted to use a company called
+Ageless to streamline the process. Although this option cost a bit more than going through my PCP, it was quick and
+hassle-free, which was worth it for me.
+
+Note: As of 2025-01-01, this is no longer necessary. You can buy over the counter version of GCM: Abbott Lingo and Dexcom Stelo!
 
 ## Learnings
 
-* Rice and bread were terrible for my glucose levels - consistently spiked me every single time
-* Latte
-* Bad food early in the day can ruin BG for the rest of the day
-* Some innocous sounding takeout food can have large spike
-* Foods that worked best: chia pudding, salad, veggie chili, salmon brocolli,
-* There was a statistically significant drop in BG on days I've worked out vs days I did not
-
-
-## Summary
+- **Rice and bread consistently caused glucose spikes** - These foods had a significant impact every time I consumed them.
+- **Lattes were unexpectedly problematic** - Even small indulgences could cause noticeable increases.
+- **Poor food choices early in the day set the tone** - A bad start often disrupted glucose levels for the entire day.
+- **Seemingly innocuous takeout meals caused large spikes** - What appeared harmless wasn’t always so.
+- **Better food choices** - Meals like chia pudding, salads, veggie chili, salmon, and broccoli consistently worked well for me.
+- **Exercise made a clear difference** - On days I exercised, my blood glucose levels showed a statistically significant drop compared to non-exercise days.

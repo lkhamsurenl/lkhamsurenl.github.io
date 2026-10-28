@@ -6,21 +6,21 @@ tags:
   - Personal finance
 ---
 
-Early on after started making money, I actually did try out active investing (robinhood, stock picking, building
+When I first started earning money, I actually did try out active investing (robinhood, stock picking, building
 models for automated trading, etc) but quickly realized:
 
 * It is hard to make sustainable money with an active trading (Most of short term gains were due to luck, I definitely
 was not skilled)
 * More importantly, I actually was not super interested in spending lots of my free time thinking about active spending.
 
-The latter point is really what attracted me to the Bogleheads investing approach. And the fact that it's simple and
+The latter point is what attracted me to the Bogleheads style investing approach. And the fact that it's simple and
 intuitive means it's accessible to people who lack personal finance knowledge.
 
 You can find everything you need to know about the investment style in [bogleheads.org](https://bogleheads.org).
 In this doc, I am providing my version of simplified summary.
 
 
-## TLDR
+## TL;DR
 
 * Pay off any debt as soon as possible (exception to low interest rate ones like mortgage)
 * Maintain 6 months living expense worth of emergency savings

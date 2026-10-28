@@ -4,3 +4,6 @@ _site
 node_modules
 
 assets/notebooks/**
+
+# Downloaded at build time by the deploy workflow
+_data/recent/

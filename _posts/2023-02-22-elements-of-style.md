@@ -6,7 +6,8 @@ tags:
   - Writing
 ---
 
-Following are main rules for effective English writing.
+Following are main rules for effective English writing, from
+[The Elements of Style](/books/#the-elements-of-style).
 
 * In a series of 3 or more terms with a single conjunction, use a comman after the each term except the last
   * red, white, and blue

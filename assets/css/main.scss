@@ -1,0 +1,242 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+search: false
+---
+
+@charset "utf-8";
+
+// Light-mode values for the theme's Sass, kept in step with /assets/shared.css.
+// The theme derives tints from these with mix(), so they have to be real colors
+// rather than CSS variables.
+$background-color: #fbfaf8;
+$text-color: #1a1a1a;
+$border-color: #e5e2dc;
+$primary-color: #33658a;
+$link-color: #33658a;
+$masthead-link-color: $text-color;
+$footer-background-color: #f3f1ec;
+$code-background-color: #f3f1ec;
+
+$sans-serif: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+$serif: ui-serif, Georgia, serif;
+$global-font-family: $serif;
+$header-font-family: $serif;
+
+@import "minimal-mistakes/skins/default";
+@import "minimal-mistakes";
+
+// From here on, colors come from the variables in /assets/shared.css, so the
+// blog follows the same palette - and the same dark mode - as the other sections.
+:root {
+  --accent: #33658a;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accent: #8fb6d4;
+  }
+}
+
+html,
+.greedy-nav,
+.greedy-nav .hidden-links,
+.author__urls,
+.toc,
+.search-content {
+  background-color: var(--bg);
+  color: var(--fg);
+}
+
+body,
+.page__title,
+.archive__item-title,
+.page__content h1,
+.page__content h2,
+.page__content h3 {
+  color: var(--fg);
+}
+
+a,
+.page__content a,
+.archive__item-title a {
+  color: var(--accent);
+}
+
+// The masthead matches the header the sister sites print.
+.masthead {
+  border-bottom-color: var(--line);
+  font-family: var(--font-ui);
+}
+
+.masthead__menu-item a,
+.greedy-nav a,
+.greedy-nav .site-title {
+  color: var(--muted);
+}
+
+.greedy-nav .site-title,
+.greedy-nav a:hover {
+  color: var(--fg);
+}
+
+.greedy-nav .visible-links a::before {
+  background: var(--accent);
+}
+
+.page__meta,
+.page__date,
+.archive__item-excerpt,
+.archive__subtitle,
+.page__taxonomy,
+.author__bio,
+.page__footer,
+.page__footer a {
+  color: var(--muted);
+}
+
+.page__footer {
+  background-color: var(--card);
+  border-top-color: var(--line);
+}
+
+hr,
+.archive__subtitle,
+.page__related,
+.page__taxonomy-item,
+.toc,
+.toc .nav__title,
+.toc li,
+.page__content table,
+.page__content th,
+.page__content td {
+  border-color: var(--line);
+}
+
+:not(pre) > code,
+.highlight,
+div.highlighter-rouge,
+figure.highlight {
+  background: var(--card);
+  color: var(--fg);
+}
+
+.toc .nav__title {
+  background: var(--accent);
+}
+
+// Post lists (the Writing page): quiet serif titles instead of heavy underlined links.
+.archive__item-title {
+  font-family: var(--font-body);
+  font-weight: 600;
+
+  a {
+    color: var(--fg);
+    text-decoration: none;
+
+    &:hover {
+      color: var(--accent);
+    }
+  }
+}
+
+// Homepage: one short, newest-first list per section.
+.home .page__content {
+  max-width: 720px;
+}
+
+.home-section {
+  margin-bottom: 2.75em;
+}
+
+.home-section__title {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1em;
+  margin: 0 0 0.6em;
+  padding-bottom: 0.4em;
+  border-bottom: 1px solid var(--line);
+  font: 600 0.8em/1.2 var(--font-ui);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  a {
+    color: var(--muted);
+    text-decoration: none;
+
+    &:hover {
+      color: var(--accent);
+    }
+  }
+}
+
+.home-section__summary {
+  color: var(--muted);
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.page__content .home-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+    margin: 0;
+    padding: 0.45em 0;
+  }
+
+  a {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0 0.6em;
+    min-width: 0;
+    color: var(--fg);
+    text-decoration: none;
+
+    &:hover .home-list__title {
+      color: var(--accent);
+    }
+  }
+}
+
+.home-list__cover {
+  align-self: center;
+  width: 28px;
+  height: 42px;
+  object-fit: cover;
+  border-radius: 2px;
+  background: var(--line);
+}
+
+.home-list__title {
+  font-weight: 600;
+}
+
+.home-list__subtitle {
+  color: var(--muted);
+  font-size: 0.85em;
+}
+
+.home-list__meta {
+  flex-shrink: 0;
+  color: var(--accent);
+  font: 0.8em/1 var(--font-ui);
+  letter-spacing: 0.08em;
+
+  .off {
+    opacity: 0.25;
+  }
+}
+
+.home-list__date {
+  flex-shrink: 0;
+  color: var(--muted);
+  font: 0.8em/1 var(--font-ui);
+}

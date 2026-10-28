@@ -1,0 +1,30 @@
+{%- comment -%}
+  One homepage section fed by a sister site's recent.json:
+  { title, url, summary, items: [{ title, subtitle, rating, image, url }] }.
+  Renders nothing when the data wasn't downloaded, e.g. in a local build.
+{%- endcomment -%}
+{%- assign section = include.section -%}
+{%- if section and section.items.size > 0 -%}
+<section class="home-section">
+  <h2 class="home-section__title">
+    <a href="{{ section.url }}">{{ section.title }} <span aria-hidden="true">&rarr;</span></a>
+    <span class="home-section__summary">{{ section.summary }}</span>
+  </h2>
+  <ul class="home-list">
+    {%- for item in section.items %}
+    <li>
+      <a href="{{ item.url }}">
+        {%- if item.image %}<img class="home-list__cover" src="{{ item.image }}" alt="" loading="lazy">{% endif %}
+        <span class="home-list__title">{{ item.title }}</span>
+        <span class="home-list__subtitle">{{ item.subtitle }}</span>
+      </a>
+      {%- if item.rating %}
+      <span class="home-list__meta" title="{{ item.rating }} out of 5">
+        {%- for i in (1..5) -%}<span class="{% if i > item.rating %}off{% endif %}">&#9733;</span>{%- endfor -%}
+      </span>
+      {%- endif %}
+    </li>
+    {%- endfor %}
+  </ul>
+</section>
+{%- endif -%}

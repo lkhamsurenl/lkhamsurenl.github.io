@@ -26,7 +26,11 @@ search: true
 
 # Build settings
 markdown: kramdown
-remote_theme: mmistakes/minimal-mistakes
+# Silence deprecation warnings from the theme's Sass.
+sass:
+  quiet_deps: true
+  silence_deprecations: [import, global-builtin, if-function, slash-div, color-functions]
+theme: minimal-mistakes-jekyll
 # Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
@@ -36,6 +40,7 @@ timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 include:
   - _pages
 
+url: "https://lkhamsurenl.github.io"
 repository: "lkhamsurenl/lkhamsurenl.github.io"
 
 # Exclude from processing.
@@ -58,7 +63,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
-  - jemoji
   - jekyll-include-cache
 
 author:

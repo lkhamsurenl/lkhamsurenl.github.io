@@ -193,9 +193,8 @@ figure.highlight {
 
   a {
     display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    gap: 0 0.6em;
+    align-items: center;
+    gap: 0.75em;
     min-width: 0;
     color: var(--fg);
     text-decoration: none;
@@ -206,8 +205,17 @@ figure.highlight {
   }
 }
 
+// Title and subtitle wrap among themselves, so a long title stays beside its cover.
+.home-list__text {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0 0.6em;
+  min-width: 0;
+}
+
 .home-list__cover {
-  align-self: center;
+  flex-shrink: 0;
   width: 28px;
   height: 42px;
   object-fit: cover;

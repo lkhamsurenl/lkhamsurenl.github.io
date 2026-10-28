@@ -15,8 +15,10 @@
     <li>
       <a href="{{ item.url }}">
         {%- if item.image %}<img class="home-list__cover" src="{{ item.image }}" alt="" width="28" height="42" loading="lazy">{% endif %}
-        <span class="home-list__title">{{ item.title }}</span>
-        <span class="home-list__subtitle">{{ item.subtitle }}</span>
+        <span class="home-list__text">
+          <span class="home-list__title">{{ item.title }}</span>
+          <span class="home-list__subtitle">{{ item.subtitle }}</span>
+        </span>
       </a>
       {%- if item.rating %}
       <span class="home-list__meta" title="{{ item.rating }} out of 5">

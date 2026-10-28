@@ -39,16 +39,18 @@ include:
 repository: "lkhamsurenl/lkhamsurenl.github.io"
 
 # Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+# This list overrides Jekyll's defaults, so they are repeated here.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+  - convert.py
+  - assets/notebooks/
 
 # Plugins (previously gems:)
 plugins:

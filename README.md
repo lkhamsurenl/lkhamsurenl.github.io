@@ -16,14 +16,8 @@ python convert.py assets/notebooks/glucose/2023-02-19-CGM.ipynb
 
 ```
 
-If there was a chance in dependency, then run 
+If there was a change in dependency, then run 
 
 ```{bash}
 bundle install
-```
-
-You can also encrypt the page that you don't want publich with https://github.com/robinmoisson/staticrypt:
-
-```{bash}
-npx staticrypt _posts/2022-12-29-spendings.html PASSPHRASE
 ```

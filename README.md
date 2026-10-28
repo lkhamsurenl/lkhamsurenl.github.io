@@ -11,6 +11,8 @@ python convert.py assets/notebooks/glucose/2023-02-19-CGM.ipynb
 
 ## Test locally
 
+Requires the Ruby version in `.ruby-version` (chruby switches to it automatically).
+
 ```{bash}
 (cd $HOME/development/lkhamsurenl.github.io && bundle exec jekyll serve)
 

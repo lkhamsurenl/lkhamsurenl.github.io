@@ -92,3 +92,7 @@ to have Bonds in one 401k account and allocate stocks in taxable.
 ## Resources
 
 * [https://bogleheads.org](https://bogleheads.org)
+* Books on my shelf that cover the same approach:
+  * [The Bogleheads' Guide to Investing](/books/#the-bogleheads-guide-to-investing)
+  * [The Bogleheads' Guide to the Three-Fund Portfolio](/books/#the-bogleheads-guide-to-the-three-fund-portfolio)
+  * [The Little Book of Common Sense Investing](/books/#the-little-book-of-common-sense-investing)

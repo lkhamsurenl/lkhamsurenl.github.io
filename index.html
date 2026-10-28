@@ -1,7 +1,28 @@
 ---
-# You don't need to edit this file, it's empty on purpose.
-# Edit theme's home layout instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-layout: home
-author_profile: true
+# The homepage previews every section of the site, newest first.
+# Reading and Eating come from /books/recent.json and /restaurant/recent.json,
+# which the deploy workflow downloads into _data/recent/ before building.
+layout: single
+author_profile: false
+classes: home
 ---
+
+{% include home-section.html section=site.data.recent.books %}
+{% include home-section.html section=site.data.recent.restaurants %}
+
+<section class="home-section">
+  <h2 class="home-section__title">
+    <a href="{{ '/posts/' | relative_url }}">Writing <span aria-hidden="true">&rarr;</span></a>
+    <span class="home-section__summary">{{ site.posts | size }} posts</span>
+  </h2>
+  <ul class="home-list">
+    {% for post in site.posts limit:5 %}
+    <li>
+      <a href="{{ post.url | relative_url }}">
+        <span class="home-list__title">{{ post.title }}</span>
+      </a>
+      <span class="home-list__date">{{ post.date | date: "%b %Y" }}</span>
+    </li>
+    {% endfor %}
+  </ul>
+</section>

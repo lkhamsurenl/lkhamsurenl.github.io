@@ -5,6 +5,10 @@ on:
     branches: [master]
   pull_request:
   workflow_dispatch:
+  # The homepage shows the latest from /books/ and /restaurant/, which deploy
+  # from their own repos; rebuild daily so it picks up their changes.
+  schedule:
+    - cron: "17 13 * * *"
 
 permissions:
   contents: read
@@ -29,6 +33,16 @@ jobs:
 
       - id: pages
         uses: actions/configure-pages@v6
+
+      # A section whose feed is missing is left off the homepage, so a failed
+      # download degrades the page rather than breaking the build.
+      - name: Fetch recent books and restaurants
+        run: |
+          mkdir -p _data/recent
+          curl -fsSL https://lkhamsurenl.github.io/books/recent.json -o _data/recent/books.json \
+            || { echo "::warning::books feed unavailable"; rm -f _data/recent/books.json; }
+          curl -fsSL https://lkhamsurenl.github.io/restaurant/recent.json -o _data/recent/restaurants.json \
+            || { echo "::warning::restaurant feed unavailable"; rm -f _data/recent/restaurants.json; }
 
       - name: Build with Jekyll
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"

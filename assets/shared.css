@@ -1,0 +1,71 @@
+/*
+ * Shared by every section of lkhamsurenl.github.io: this blog, /books/ and
+ * /restaurant/. Those sites link here by absolute URL, so a change to this file
+ * changes all three - keep it to the palette, fonts and the cross-site header.
+ * Each section sets its own --accent.
+ */
+
+:root {
+  color-scheme: light dark;
+  --bg: #fbfaf8;
+  --fg: #1a1a1a;
+  --muted: #6b6b6b;
+  --card: #ffffff;
+  --line: #e5e2dc;
+  --font-body: ui-serif, Georgia, serif;
+  --font-ui: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #16151a;
+    --fg: #ecebe8;
+    --muted: #9b9892;
+    --card: #201f26;
+    --line: #32303a;
+  }
+}
+
+/* The header the sister sites print. The blog's own masthead is styled to match. */
+.site-nav {
+  border-bottom: 1px solid var(--line);
+  font: 500 0.95rem/1.2 var(--font-ui);
+}
+
+.site-nav .inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem 1.4rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1.1rem 1.5rem;
+}
+
+.site-nav a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.site-nav a:hover,
+.site-nav a[aria-current="page"] {
+  color: var(--fg);
+}
+
+.site-nav .home {
+  margin-right: auto;
+  color: var(--fg);
+  font-weight: 700;
+}
+
+/* A deep link like /books/#the-elements-of-style lands on a highlighted card. */
+.book,
+.card {
+  scroll-margin-top: 1.5rem;
+}
+
+.book:target,
+.card:target {
+  outline: 2px solid var(--accent, var(--fg));
+  outline-offset: 3px;
+}

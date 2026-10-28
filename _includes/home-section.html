@@ -14,7 +14,7 @@
     {%- for item in section.items %}
     <li>
       <a href="{{ item.url }}">
-        {%- if item.image %}<img class="home-list__cover" src="{{ item.image }}" alt="" loading="lazy">{% endif %}
+        {%- if item.image %}<img class="home-list__cover" src="{{ item.image }}" alt="" width="28" height="42" loading="lazy">{% endif %}
         <span class="home-list__title">{{ item.title }}</span>
         <span class="home-list__subtitle">{{ item.subtitle }}</span>
       </a>

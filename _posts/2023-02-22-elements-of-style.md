@@ -9,7 +9,7 @@ tags:
 Following are main rules for effective English writing, from
 [The Elements of Style](/books/#the-elements-of-style).
 
-* In a series of 3 or more terms with a single conjunction, use a comman after the each term except the last
+* In a series of 3 or more terms with a single conjunction, use a comma after each term except the last
   * red, white, and blue
 * Use ; for independent sentences with related content.
 * Use paragraph as unit of composition. Do not have more than 1 topic in a paragraph.

@@ -11,7 +11,7 @@ models for automated trading, etc) but quickly realized:
 
 * It is hard to make sustainable money with an active trading (Most of short term gains were due to luck, I definitely
 was not skilled)
-* More importantly, I actually was not super interested in spending lots of my free time thinking about active spending.
+* More importantly, I actually was not super interested in spending lots of my free time thinking about active investing.
 
 The latter point is what attracted me to the Bogleheads style investing approach. And the fact that it's simple and
 intuitive means it's accessible to people who lack personal finance knowledge.

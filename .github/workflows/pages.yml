@@ -49,6 +49,21 @@ jobs:
         env:
           JEKYLL_ENV: production
 
+      # Checks a copy with the live /books/ and /restaurant/ pages alongside, so
+      # links into them (like /books/#the-elements-of-style) are checked too
+      # without being published from here. External links are skipped: other
+      # people's sites going down shouldn't block a deploy.
+      - name: Check links
+        run: |
+          check="$RUNNER_TEMP/site"
+          cp -R _site "$check"
+          for section in books restaurant; do
+            mkdir -p "$check/$section"
+            curl -fsSL "https://lkhamsurenl.github.io/$section/" -o "$check/$section/index.html"
+          done
+          bundle exec htmlproofer "$check" --disable-external \
+            --ignore-files "/\/(books|restaurant)\//"
+
       - uses: actions/upload-pages-artifact@v5
 
   deploy:

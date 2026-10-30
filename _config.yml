@@ -15,14 +15,12 @@
 # in the templates via {{ site.myvariable }}.
 title: lkhamsurenl
 email:
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-twitter_username: username
+# Shown in search results, link previews and the feed.
+description: lkhamsurenl personal blog with writings, books, and food
 github_username: lkhamsurenl
 minimal_mistakes_skin: default
-search: true
+# Default link-preview image for pages without their own.
+og_image: /assets/images/og-default.png
 
 # Build settings
 markdown: kramdown
@@ -89,8 +87,6 @@ defaults:
       layout: single
       author_profile: false
       read_time: true
-      comments: true
-      share: true
       related: true
       show_date: true
   # _pages
@@ -99,11 +95,4 @@ defaults:
       type: pages
     values:
       layout: single
-      author_profile: true
-
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
+      author_profile: false
